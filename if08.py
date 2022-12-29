@@ -11,4 +11,14 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a > 9 and a < pow(10,2) and a%2 != 0:
+        return "two-digit odd number"
+    if a > 9 and a < pow(10,2) and a%2 == 0:
+        return "two-digit even number"
+    if a >= pow(10,2) and a < pow(10,3) and a%2 != 0:
+        return "two-digit odd number"
+    if a >= pow(10,2) and a < pow(10,3) and a%2 == 0:
+        return "two-digit even number"
+
+a = int(input())
+print(main(a))
